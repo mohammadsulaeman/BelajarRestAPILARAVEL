@@ -79,7 +79,7 @@ class ProductController extends Controller
         }else{
             return response([
                 'status' => 'NOT FOUND',
-                'message' => 'Data Siswa tidak ditemukan'
+                'message' => 'Data Product tidak ditemukan'
             ], 404);
         }
     }
@@ -94,12 +94,12 @@ class ProductController extends Controller
             ProductModel::destroy($id);
             return response([
                 'status' => 'success',
-                'message' => 'Data Siswa Berhasil Di Hapus'
+                'message' => 'Data Product Berhasil Di Hapus'
             ], 200);
         } else {
             return response([
                 'status' => 'NOT FOUND',
-                'message' => 'Data Siswa tidak ditemukan'
+                'message' => 'Data Product tidak ditemukan'
             ], 404);
         }
     }
